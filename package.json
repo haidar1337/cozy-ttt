@@ -2,7 +2,7 @@
   "name": "cozy-ttt",
   "version": "1.0.0",
   "scripts": {
-   "build": "tsc"
+   "build": "rm -rf build && tsc"
   },
   "author": "",
   "description": ""
