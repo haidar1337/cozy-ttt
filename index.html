@@ -1,33 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cozy Tic Tac Toe</title>
-    <link rel="stylesheet" href="./src/styles.css" />
-  </head>
-  <body>
-    <div id="game__board">
-      <h1>Cozy Tic Tac Toe</h1>
-      <div id="div__players">
-        <div id="players">
-          <div class="div__player">
-            <label class="player__name">Player X: </label>
-            <label id="player_x_score">1</label>
-          </div>
-          <div class="div__player">
-            <label class="player__name">Player O: </label>
-            <label id="player_o_score">0</label>
-          </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cozy Tic Tac Toe</title>
+  <link rel="stylesheet" href="./src/styles.css" />
+</head>
+
+<body>
+  <div id="game__board">
+    <h1>Cozy Tic Tac Toe</h1>
+    <div class="div__player">
+      <label class="player__name">Player X: </label>
+      <label id="player_x_score">1</label>
+    </div>
+    <div class="div__player">
+      <label class="player__name">Player O: </label>
+      <label id="player_o_score">0</label>
+    </div>
+    <div id="turn">
+      <label>Next Turn: </label>
+      <label>O</label>
+    </div>
+
+    <div id="tic_tac_toe_background">
+      <div id="tic_tac_toe_board">
+        <div class="tic_tac_toe_square">
+          <img class="icon" src="./public/x-icon.svg" alt="X">
         </div>
-        <div id="turn">
-          <div id="next__turn">
-            <label>Next Turn: </label>
-            <label>O</label>
-          </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
+        </div>
+        <div class="tic_tac_toe_square">
+
         </div>
       </div>
     </div>
-    <script src="./build/index.js"></script>
-  </body>
+    <button id="reset" type="reset">Reset Game</button>
+  </div>
+
+  <script src="./build/index.js"></script>
+</body>
+
 </html>

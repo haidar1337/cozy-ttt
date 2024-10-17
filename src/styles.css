@@ -1,5 +1,5 @@
 body {
-    background-color: #fef3c7;
+    background-color: #fff2bd;
 }
 
 h1 {
@@ -11,19 +11,34 @@ h1 {
    display: flex; 
    flex-direction: column;
    justify-content: center;
+   background-color: #fef3c7;
    margin-left: 25%;
    margin-right: 25%; 
    align-items: center;
-   border: 1px solid grey;
-   box-shadow: 1px 1px grey;
+   border: 4px solid#fef3c7;
+   border-radius: 32px;
 }
 
+#reset {
+    background-color: #d97706 ;
+    color: white;
+    border-radius: 8px;
+    height: 32px;
+    width: 400px;
+    border: 2px solid #d97706;
+}
+
+#reset:hover {
+    background-color: #b45309;
+    border: 2px solid #b45309;
+}
 
 .div__player {
     display: flex;
     flex-direction: row;
     color: #92400e;
     font-weight: 600;
+    font-size: 24px;
 }
 
 .player__name {
@@ -33,17 +48,85 @@ h1 {
 #turn {
     color: #92400e;
     font-weight: 600;
+    font-size: 24px;
+    padding-top: 4px;
+}
+
+#tic_tac_toe_background {
+    background-color: #fde68a;
+    border: 1px solid #fde68a;
+    box-shadow: 1px 1px #fde68a;
+    border-radius: 32px;
+    margin-bottom: 12px;
+}
+
+#tic_tac_toe_board {
+    display: grid; 
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto;
+    gap: 4px;
+    margin: 20px;
+}
+
+.tic_tac_toe_square {
+    border: 2px solid #92400e;
+    height: 128px;
+    width: 128px;
+}
+
+.icon {
+    width: 128px;
+    height: auto;
+}
+
+.tic_tac_toe_square:hover {
+    background-color:#ffefb0;
 }
 
 @media (max-width: 480px) {
     #game__board > h1 {
-        font-size: 1em;
+        font-size: 20px;
     }
 
+    #tic_tac_toe_board {
+        grid-template-columns: 72px 72px 72px;
+        margin: 16px;
+    }
+
+    .tic_tac_toe_square {
+        height: 64px;
+        width: 64px;
+    }
+
+    .icon {
+        width: 64px;
+        height: auto;
+    }
+
+    #reset {
+        width: 256px;
+    }
+
+    .div__player {
+        font-size: 20px;
+    }
+
+    #turn {
+        font-size: 20px;
+    }
 }
 
 @media (min-width: 481px) and (max-width: 1024px){
     #game__board > h1 {
-        font-size: 1.5em;
+        font-size: 28px;
+    }
+
+    .div__player {
+        font-size: 28px;
+    }
+
+    #turn {
+        font-size: 28px;
     }
 }
