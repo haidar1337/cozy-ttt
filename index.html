@@ -1,15 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cozy Tic Tac Toe</title>
-</head>
-<body>
-  <button id="clickme">Click Me</button> 
-  <p id="count">0</p>
-
-
-  <script src="./build/index.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Tic Tac Toe</title>
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <div id="game__board">
+      <h1>Cozy Tic Tac Toe</h1>
+      <div id="div__players">
+        <div id="players">
+          <div class="div__player">
+            <label class="player__name">Player X: </label>
+            <label id="player_x_score">1</label>
+          </div>
+          <div class="div__player">
+            <label class="player__name">Player O: </label>
+            <label id="player_o_score">0</label>
+          </div>
+        </div>
+        <div id="turn">
+          <div id="next__turn">
+            <label>Next Turn: </label>
+            <label>O</label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./build/index.js"></script>
+  </body>
 </html>
